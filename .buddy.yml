@@ -1,15 +1,14 @@
 pipelines:
   default:
-    - action: python3 sklate.py
-      type: BUILD
-      docker_image_name: library/python
-      docker_image_tag: "3.10"
-      execute_commands:
-        - python3 -m pip install --upgrade pip
-        - pip install -r requirements.txt
-        - "ls -l  # Check if sklate.py exists"
-        - chmod +x sklate.py
-        - python3 sklate.py
-      cached_dirs:
-        - /root/.cache/pip
-      shell: BASH
+    - step:
+        name: Set Up Python Environment
+        image: python:3.10
+        cache:
+          - .cache/pip
+        commands:
+          - python3 -m pip install --upgrade pip
+          - pip install -r requirements.txt
+          - ls -l  # Check if the script exists
+          - chmod +x sklate.py
+          - python3 sklate.py
+    
