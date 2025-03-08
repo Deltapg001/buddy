@@ -11,4 +11,3 @@ pipelines:
           - ls -l  # Check if the script exists
           - chmod +x sklate.py
           - python3 sklate.py
-    
