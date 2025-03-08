@@ -40,7 +40,7 @@ async def update_user(user_id, coins):
 async def start(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*❄️ WELCOME TO NEERAJ ULTIMATE UDP FLOODER ❄️*\n\n"
+        "*❄️ WELCOME TO JACK ULTIMATE UDP FLOODER ❄️*\n\n"
         "*🔥 Yeh bot apko deta hai hacking ke maidan mein asli mazza! 🔥*\n\n"
         "*✨ Key Features: ✨*\n"
         "🚀 *𝘼𝙩𝙩𝙖𝙘𝙠 𝙠𝙖𝙧𝙤 𝙖𝙥𝙣𝙚 𝙤𝙥𝙥𝙤𝙣𝙚𝙣𝙩𝙨 𝙥𝙖𝙧 𝘽𝙜𝙢𝙞 𝙈𝙚 /attack*\n"
